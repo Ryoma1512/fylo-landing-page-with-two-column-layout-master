@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <link rel="stylesheet" href="css/all.min.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="grid grid-rows-1 my-10">
+    <ul class="flex justify-around text-desaturedblue-500 font-semibold">
+      <li><img src="images/logo.svg" alt="Fylo Logo"></li>
+      <div class="flex gap-x-2 flex-wrap lg:gap-x-10 lg:ml-52">
+      <li class="mt-2 ml-2 text-lg hover:text-desaturedblue-900"><a href="#">Features</a></li>
+      <li class="mt-2 text-lg hover:text-desaturedblue-900"><a href="#">Team</a></li>
+      <li class="mt-2 text-lg hover:text-desaturedblue-900"><a href="#">Sign In</a></li>
+      </div>
+    </ul>
+  </div>
+  <!-- END NAVBAR -->
+
+  <!-- SECTION  -->
+  <div class="grid grid-cols-1 lg:grid-cols-2">
+    <img class="max-w-sm mx-auto mt-16 lg:order-2 lg:max-w-lg" src="images/illustration-1.svg" alt="Illustration">
+      <div class="mx-3 lg:my-14 lg:mx-14">
+        <h1 class="text-3xl font-bold text-center text-desaturedblue-900 mt-5 lg:text-5xl lg:text-left ">All your files in one secure location, accessible anywhere.</h1>
+        <p class="text-desaturedblue-600 text-center mt-5 lg:text-left lg:text-xl">Fylo stores your most important files in one secure location. 
+          Access them wherever you need, share and collaborate with friends, 
+          family, and co-workers.</p>
+        <form action="" method="get" class="mt-5 text-center lg:flex lg:gap-x-2">
+          <label for="email"></label>
+          <input class="border-2 border-lightgray-700 rounded-md py-2 px-12" id="email" name="email" type="email" placeholder="Enter your email">
+          <button class="bg-brightblue-500 rounded-md mt-2 py-2 w-72 text-white hover:bg-brightblue-800 font-semibold">Get Started</button>
+        </form>
+      </div>
+  </div>
+  <!-- END SECTION  -->
+
+  <!-- STAY PRODUCTIVE SECTION -->
+  <div class="grid grid-cols-1 bg-no-repeat lg:grid-cols-2 lg:mx-5" style="background-image: url(images/bg-curve-mobile.svg);">
+    <img class="max-w-sm mx-auto mt-32 lg:order-2 lg:max-w-lg" src="images/illustration-2.svg" alt="Illustration">
+      <div class="mx-5">
+        <h2 class="font-bold text-lg text-center mt-28 text-desaturedblue-900 lg:text-4xl">Stay productive, wherever you are</h2>
+        <p class=" mt-5 text-lightgray-900 lg:text-xl">Never let location be an issue when accessing your files. Fylo has you 
+          covered for all of your file storage needs. <br>
+          <br>Securely share files and folders with friends, family and colleagues for 
+          live collaboration. No email attachments required!
+        </p>
+        <h2 class="text-center mt-5 lg:text-left lg:text-xl"><a class="text-moderatecyan-800 underline hover:text-brightblue-500" href="#">See how Fylo works</a></h2>
+            <!-- KYLE BURTON CARD -->
+          <div class="border-2 mx-5 my-5 shadow-2xl lg:mx-36">
+            <img class="mt-5" src="images/icon-quotes.svg" alt="Quote Icon">
+            <p class="text-sm">Fylo has improved our team productivity by an order of magnitude. Since 
+              making the switch our team has become a well-oiled collaboration machine.</p>
+              <div class="flex mt-4">
+                <img class="h-8 rounded-full mr-2" src="images/avatar-testimonial.jpg" alt="Kyle Burton">
+                  <div class="flex flex-col">
+                      <h2 class="font-bold text-sm">Kyle Burton</h2>
+                      <h3 class="text-xs">Founder & CEO, Huddle</h3>
+                </div>
+              </div>
+          </div>
+            <!-- END KYLE BURTON CARD -->
+      </div>
+  </div>
+  <!-- END STAY PRODUCTIVE SECTION -->
+
+  <!-- Get Early Section -->
+  <div class="grid grid-cols-1 bg-desaturedblue-500 mt-20 lg:grid-cols-2">
+
+    <div class="lg:mx-20">
+      <h1 class="text-white font-bold text-center mt-20 text-2xl pb-5 lg:mt-10 lg:text-3xl lg:text-left">Get early access today</h1>
+      <p class="text-white text-center mx-8 lg:text-left lg:mx-0 lg:mr-8 lg:pb-20">It only takes a minute to sign up and our free starter tier is extremely generous. 
+        If you have any questions, our support team would be happy to help you.</p>
+    </div>
+
+    <div class="text-center mt-4 lg:my-auto">
+      <form action="" method="get" class="mt-5 lg:flex lg:flex-col">
+        <label for="email"></label>
+        <input class="border-2 border-lightgray-700 rounded-md py-2 px-12 lg:max-w-lg" id="email" name="email" type="email" placeholder="email@example.com">
+        <button class="bg-brightblue-500 rounded-md mt-2 py-2 w-72 text-white capitalize font-semibold mb-16 hover:bg-brightblue-800 lg:mt-5">Get Started For Free</button>
+      </form>
+    </div>
+
+  </div>
+  <!-- END GET EARLY SECTION -->
+
+  <!-- FOOTER -->
+  <footer class="grid grid-cols-1 bg-verydarkblue-500 md:grid-cols-4 lg:grid-cols-5">
+    <ul class="mx-5 lg:mt-20 md:ml-2 lg:ml-8">
+      <li class="py-5 w-48"><a href="index.html"><img src="images/logo.svg" alt="Fylo Logo"></a></li>
+      <li class="flex gap-x-5 mb-5">
+        <img src="images/icon-phone.svg" alt="Phone">
+        <h2 class="text-white">Phone: +1-543-123-4567</h2>
+      </li>
+      <li class="flex gap-x-5">
+        <img src="images/icon-email.svg" alt="Email">
+        <h2 class="text-white">example@fylo.com</h2>
+      </li>
+    </ul>
+
+    <ul class="text-white mx-5 my-5 text-lg leading-10 capitalize w-20 md:ml-28 md:mt-20 lg:mt-40 lg:ml-32">
+      <li class="hover:text-brightblue-500"><a href="#">About Us</a></li>
+      <li class="hover:text-brightblue-500"><a href="#">Jobs</a></li>
+      <li class="hover:text-brightblue-500"><a href="#">Press</a></li>
+      <li class="hover:text-brightblue-500"><a href="#">Blog</a></li>
+    </ul>
+
+    <ul class="text-white mx-5 my-5 text-lg leading-10 capitalize w-24 md:ml-28 md:mt-20 lg:mt-40 lg:ml-32">
+      <li class="hover:text-brightblue-500"><a href="#">Contact Us</a></li>
+      <li class="hover:text-brightblue-500"><a href="#">Terms</a></li>
+      <li class="hover:text-brightblue-500"><a href="#">Privacy</a></li>
+    </ul>
+
+    <ul class="flex justify-center gap-x-10 md:mt-20 lg:mt-40 lg:ml-20">
+      <li class="text-2xl text-white hover:text-brightblue-500"><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+      <li class="text-2xl text-white hover:text-brightblue-500"><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li class="text-2xl text-white hover:text-brightblue-500"><a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+
+    <p class="text-white text-center mt-5 lg:mt-40">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="hover:text-brightblue-500 font-semibold">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/Ryoma1512" target="_blank" class="hover:text-brightblue-500 font-semibold">Mario Hernandez.</a>
+    </p>
+
+  </footer>
+  <!-- END FOOTER -->
+</body>
+</html>
